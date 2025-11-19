@@ -14,7 +14,7 @@ function App() {
             <Route path="community" element={<Community />} />
           </Routes>
         </div>
-        <div className="fixed w-[600px] bottom-0 mt-10">
+        <div className="fixed w-full lg:w-[600px] bottom-0 mt-10">
           <Menu />
         </div>
       </div>

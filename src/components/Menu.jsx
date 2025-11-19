@@ -11,12 +11,12 @@ const Menu = () => {
     <div className="flex relative">
       <div className="bg-gray-800 absolute left-0 bottom-0 px-5 py-2 w-full">
         <ul className="flex justify-between items-center">
-          <li className="px-4 py-1 hover:bg-white group rounded-md transition">
+          <li className="px-4 py-1 transition">
             <NavLink to="/"
-              className={({ isActive }) => isActive ? " px-4 py-1 bg-white group rounded-md text-gray-950 flex flex-col justify-center items-center " : "flex flex-col justify-center items-center"
+              className={({ isActive }) => isActive ? " px-4 py-1 bg-white rounded-md text-gray-950 flex flex-col justify-center items-center " : "flex flex-col justify-center items-center"
               } title="Today">
-              <CiCalendar size={25} className="group-hover:text-gray-950" />
-              <small className="text-white font-bold group-hover:text-gray-950">Today</small>
+              <CiCalendar size={25} className="text-gray-950" />
+              <small className="text-gray-950 font-bold ">Today</small>
             </NavLink>
           </li>
           <li className="px-4 py-1 hover:bg-white group rounded-md transition">

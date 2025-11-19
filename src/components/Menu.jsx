@@ -9,37 +9,39 @@ import { NavLink } from "react-router-dom";
 const Menu = () => {
   return (
     <div className="flex relative">
-      <div className="bg-gray-800 absolute left-0 bottom-0 px-5 py-2 w-full">
+      <div className="bg-gray-800 absolute left-0 bottom-0 px-5 py-1 w-full">
         <ul className="flex justify-between items-center">
-          <li className="px-4 py-1 transition">
+          <li className="hover:bg-white group rounded-md transition">
             <NavLink to="/"
-              className={({ isActive }) => isActive ? " px-4 py-1 bg-white rounded-md text-gray-950 flex flex-col justify-center items-center " : "flex flex-col justify-center items-center"
+              className={({ isActive }) => isActive ? "px-2 py-1 bg-white text-gray-950 flex flex-col justify-center items-center rounded-md transition" : " px-2 py-1 flex flex-col justify-center items-center text-white"
               } title="Today">
-              <CiCalendar size={25} className="text-gray-950" />
-              <small className="text-gray-950 font-bold ">Today</small>
+              <CiCalendar size={20} className={({ isActive }) => isActive ? "text-gray-950" : "text-white group-hover:text-gray-950"} />
+              <small className={({ isActive }) => isActive ? "text-green-600 font-extrabold" : "text-white font-bold "}>Today</small>
+            </NavLink>
+          </li>
+          <li className="hover:bg-white group rounded-md transition">
+            <NavLink to="community"
+              className={({ isActive }) => isActive ? "px-2 py-1 bg-white text-gray-950 flex flex-col justify-center items-center rounded-md transition" : " px-2 py-1 flex flex-col justify-center items-center text-white"
+              } title="Community">
+              <IoRadio size={20} className="group-hover:text-gray-950" />
+              <small className={({ isActive }) => isActive ? "text-green-600 font-extrabold" : "text-white font-bold "}>Community</small>
             </NavLink>
           </li>
           <li className="px-4 py-1 hover:bg-white group rounded-md transition">
             <NavLink to={'community'} className="flex flex-col justify-center items-center">
-              <IoRadio size={25} className="group-hover:text-gray-950" />
-              <small className="text-white font-bold group-hover:text-gray-950">Community</small>
-          </NavLink>
-          </li>
-          <li className="px-4 py-1 hover:bg-white group rounded-md transition">
-            <NavLink to={'community'} className="flex flex-col justify-center items-center">
-              <IoMdMusicalNotes size={25} className="group-hover:text-gray-950" />
-              <small className="text-white font-bold group-hover:text-gray-950">Community</small>
-            </NavLink>
-          </li>
-          <li className="px-4 py-1 hover:bg-white group rounded-md transition">
-            <NavLink to={'community'} className="flex flex-col justify-center items-center">
-              <GrMultimedia size={25} className="group-hover:text-gray-950" />
+              <IoMdMusicalNotes size={20} className="group-hover:text-gray-950" />
               <small className="text-white font-bold group-hover:text-gray-950">Community</small>
             </NavLink>
           </li>
           <li className="px-4 py-1 hover:bg-white group rounded-md transition">
             <NavLink to={'community'} className="flex flex-col justify-center items-center">
-              <FaRegUser size={25} className="group-hover:text-gray-950" />
+              <GrMultimedia size={20} className="group-hover:text-gray-950" />
+              <small className="text-white font-bold group-hover:text-gray-950">Community</small>
+            </NavLink>
+          </li>
+          <li className="px-4 py-1 hover:bg-white group rounded-md transition">
+            <NavLink to={'community'} className="flex flex-col justify-center items-center">
+              <FaRegUser size={20} className="group-hover:text-gray-950" />
               <small className="text-white font-bold group-hover:text-gray-950">Community</small>
             </NavLink>
           </li>

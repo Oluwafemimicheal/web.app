@@ -2,6 +2,8 @@ import { Route, Routes } from "react-router-dom";
 import Menu from "./components/Menu";
 import Home from "./components/Home";
 import Community from "./components/Community";
+import Message from "./components/Message";
+import Stream from "./components/Stream";
 
 function App() {
 
@@ -12,9 +14,11 @@ function App() {
           <Routes>
             <Route index path="/" element={<Home />} />
             <Route path="community" element={<Community />} />
+            <Route path="messages" element={<Message />} />
+            <Route path="stream" element={<Stream />} />
           </Routes>
         </div>
-        <div className="fixed w-full lg:w-[600px] bottom-0 mt-10">
+        <div className="fixed w-full lg:w-[600px] bottom-2 flex items-center">
           <Menu />
         </div>
       </div>

@@ -10,7 +10,7 @@ function App() {
   return (
     <div className=" w-full lg:w-[600px] h-auto mx-auto overflow-auto">
       <div className="bg-gray-900 h-full relative">
-        <div className="p-3 pb-10">
+        <div className="p-3 pb-30">
           <Routes>
             <Route index path="/" element={<Home />} />
             <Route path="community" element={<Community />} />
@@ -18,7 +18,7 @@ function App() {
             <Route path="stream" element={<Stream />} />
           </Routes>
         </div>
-        <div className="fixed w-full lg:w-[600px] bottom-2 flex items-center">
+        <div className="fixed w-full lg:w-[600px] bottom-5 flex items-center">
           <Menu />
         </div>
       </div>

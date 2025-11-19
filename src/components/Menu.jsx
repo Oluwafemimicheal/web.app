@@ -15,7 +15,7 @@ const Menu = () => {
             <NavLink to="/"
               className={({ isActive }) => isActive ? "px-2 py-1 bg-white text-gray-950 flex flex-col justify-center items-center rounded-md transition" : " px-2 py-1 flex flex-col justify-center items-center text-white"
               } title="Today">
-              <CiCalendar size={20} className={({ isActive }) => isActive ? "text-gray-950" : "text-white group-hover:text-gray-950"} />
+              <CiCalendar size={18} className={({ isActive }) => isActive ? "text-gray-950" : "text-white group-hover:text-gray-950"} />
               <small className={({ isActive }) => isActive ? "text-green-600 font-extrabold" : "text-white font-bold "}>Today</small>
             </NavLink>
           </li>

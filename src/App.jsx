@@ -1,11 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import Menu from "./components/Menu";
-import Home from "./components/Home";
-import Community from "./components/Community";
-import Message from "./components/Message";
-import Stream from "./components/Stream";
-import Short from "./components/Short";
-import Sermon from "./components/Sermon";
+import Home from "./pages/Home";
+import Message from "./pages/Message";
+import Stream from "./pages/Stream";
+import Short from "./pages/Short";
+import Sermon from "./pages/Sermon";
+import Radio from "./pages/Radio";
+import Bible from "./pages/Bible";
 
 function App() {
 
@@ -15,11 +16,13 @@ function App() {
         <div className="p-3 pb-30">
           <Routes>
             <Route index path="/" element={<Home />} />
-            <Route path="community" element={<Community />} />
+            <Route path="radio" element={<Radio />} />
             <Route path="messages" element={<Message />} />
             <Route path="sermon" element={<Sermon />} />
             <Route path="stream" element={<Stream />} />
             <Route path="short" element={<Short />} />
+            <Route path="bible" element={<Bible />} />
+            <Route path="*" element={<div>404 page not found</div>} />
           </Routes>
         </div>
         <div className="fixed w-full lg:w-[600px] bottom-5 flex items-center">

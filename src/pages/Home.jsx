@@ -4,7 +4,7 @@ import { SlLike } from "react-icons/sl";
 import { MdOutlineShare } from "react-icons/md";
 import { IoIosMore } from "react-icons/io";
 import { NavLink } from "react-router-dom"
-import HomeSection from "./HomeSection"
+import HomeSection from "../components/HomeSection"
 
 const Home = () => {
   return (
@@ -13,18 +13,18 @@ const Home = () => {
         <div className="flex items-center gap-5">
           <NavLink
             to="/"
-            className={({ isActive }) => isActive ? "text-[20px] pb-1 border-b-2 border-sky-600 " : ""
+            className={({ isActive }) => isActive ? "text-[18px] pb-1 border-b-2 border-sky-600 " : ""
             }
           >
             Today
           </NavLink>
 
           <NavLink
-            to="community"
-            className={({ isActive }) => isActive ? "text-[20px] pb-1 border-b-2 border-sky-600 " : ""
+            to="bible"
+            className={({ isActive }) => isActive ? "text-[18px] pb-1 border-b-2 border-sky-600 " : ""
             }
           >
-            community
+            Bible
           </NavLink>
         </div>
         <div className="flex gap-5">
@@ -37,9 +37,8 @@ const Home = () => {
 
         <div className="flex items-center gap-1">
           <span><FaSun /></span>
-          <h1>Good Evening</h1>
+          <h1>{new Date().toLocaleTimeString()? "Good Morning" : "Good Evening"}</h1>
         </div>
-        <h1>Oluwafemi</h1>
       </div>
       <div className="w-full h-[400px] rounded-lg bg-gray-800 hero-section overflow-hidden">
         <div className="w-full h-full bg-black/50 flex flex-col justify-between gap-4 p-5">

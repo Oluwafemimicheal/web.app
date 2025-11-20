@@ -7,6 +7,7 @@ import Short from "./pages/Short";
 import Sermon from "./pages/Sermon";
 import Radio from "./pages/Radio";
 import Bible from "./pages/Bible";
+import Verse from "./components/Verse";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
             <Route path="stream" element={<Stream />} />
             <Route path="short" element={<Short />} />
             <Route path="bible" element={<Bible />} />
+            <Route path="chapter/:id" element={<Verse />} />
             <Route path="*" element={<div>404 page not found</div>} />
           </Routes>
         </div>

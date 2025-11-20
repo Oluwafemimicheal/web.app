@@ -1,9 +1,7 @@
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { FaAccessibleIcon, FaBell } from "react-icons/fa"
 import { useEffect, useState } from "react"
 import axios from "axios"
-import { li } from "framer-motion/client"
-
 const Bible = () => {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(false)
@@ -64,10 +62,12 @@ const Bible = () => {
         <h1>{loading && "Loading..."}</h1>
         {
           data.map((chapter) => (
-            <li key={chapter?.id} className="flex gap-20">
+            <Link to={`/chapter/${chapter?.id}`} key={chapter?.id}>
+              <li className="flex gap-20">
               <h1 className="w-30 md:w-50 text-[14px]">{chapter?.name}</h1>
               <small className="text-[10px] text-gray-500">{`${chapter?.nameLong.substring(0, 25)}...`}</small>
             </li>
+            </Link>
           ))
         }
       </ul>

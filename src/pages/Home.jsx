@@ -36,11 +36,11 @@ const Home = () => {
       <div className="flex gap-3 items-center text-gray-400 -mb-3">
 
         <div className="flex items-center gap-1">
-          <span><FaSun /></span>
+          <span><FaSun color="white" /></span>
           <h1>{new Date().toLocaleTimeString()? "Good Morning" : "Good Evening"}</h1>
         </div>
       </div>
-      <div className="w-full h-[400px] rounded-lg bg-gray-800 hero-section overflow-hidden">
+      <div className="w-full h-[350px] rounded-lg bg-gray-800 hero-section overflow-hidden">
         <div className="w-full h-full bg-black/50 flex flex-col justify-between gap-4 p-5">
           <div className="flex justify-between  pb-1">
             <div className="flex flex-col ">
@@ -48,9 +48,9 @@ const Home = () => {
               <span>Matthew</span> <span>4:16</span></div>
               <p className="text-sm text-gray-400">Verse of the day</p>
               </div>
-            <span className="font-bold">NKJV</span>
+            <span className="font-semibold text-sm">NKJV</span>
           </div>
-          <div className="font-bold text-2xl">
+          <div className="font-bold text-[20px]">
             The people who sat in darkness have seen a great light, and upon those who sat in the region and shadow of death, light has dawned.
 
           </div>

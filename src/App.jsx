@@ -8,6 +8,7 @@ import Sermon from "./pages/Sermon";
 import Radio from "./pages/Radio";
 import Bible from "./pages/Bible";
 import Verse from "./components/Verse";
+import Section from "./components/Section";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="short" element={<Short />} />
             <Route path="bible" element={<Bible />} />
             <Route path="chapter/:id" element={<Verse />} />
+            <Route path="verse/:chapterId" element={<Section />} />
             <Route path="*" element={<div>404 page not found</div>} />
           </Routes>
         </div>

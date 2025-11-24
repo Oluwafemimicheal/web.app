@@ -2,6 +2,7 @@ import { Link, NavLink } from "react-router-dom"
 import { FaAccessibleIcon, FaBell } from "react-icons/fa"
 import { useEffect, useState } from "react"
 import axios from "axios"
+import Spinner from "../components/Spinner"
 const Bible = () => {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(false)
@@ -30,36 +31,31 @@ const Bible = () => {
   }, [])
   return (
     <div className="flex flex-col gap-5 h-full overflow-auto">
-      <div className="flex justify-between items-center">
-        <div className="flex items-center gap-5">
+      <div className="flex justify-start items-center w-max">
+        <div className="flex items-center gap-5 bg-gray-100 px-3 py-1 rounded-sm">
           <NavLink
             to="/"
-            className={({ isActive }) => isActive ? "text-[18px] pb-1 border-b-2 border-sky-600 " : ""
+            className={({ isActive }) => isActive ? "text-[18px] pb-0.5 border-b-2 border-sky-400 " : ""
             }
           >
             Today
           </NavLink>
           <NavLink
             to="/bible"
-            className={({ isActive }) => isActive ? "text-[18px] pb-1 border-b-2 border-sky-600 " : ""
+            className={({ isActive }) => isActive ? "text-[18px] pb-0.5 border-b-2 border-orange-400 text-orange-400 " : ""
             }
           >
             Bible
           </NavLink>
 
         </div>
-        <div className="flex gap-5">
-          <FaAccessibleIcon size={20} />
-          <FaBell size={20} />
-        </div>
-
       </div>
       <h1 className="w-full  p-3 rounded-lg bg-gray-800 ">
         King James Version Edition
       </h1>
       <ul>
         <h2 className="mb-2 border-b-2 border-gray-500">Bible Chapters</h2>
-        <h1>{loading && "Loading..."}</h1>
+        <div className={loading ? 'w-full h-[400px] flex justify-center items-center' : null}>{loading && <div><Spinner /></div>}</div>
         {
           data.map((chapter) => (
             <Link to={`/chapter/${chapter?.id}`} key={chapter?.id}>

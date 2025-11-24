@@ -1,9 +1,10 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+import Spinner from './Spinner'
 
 const Verse = () => {
-  const {id} = useParams()
+  const { id } = useParams()
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(false)
   useEffect(() => {
@@ -31,9 +32,11 @@ const Verse = () => {
   }, [])
   return (
     <ul className='flex flex-wrap gap-3'>
-      <h1>{loading && "Loading..."}</h1>
-      {data?.map((verse) =>(
-        <li key={verse?.id} className='border-2 p-2 rounded-sm'>{verse.id}</li>
+      <div className={loading ? 'w-full h-[500px] flex justify-center items-center' : null}>{loading && <div><Spinner /></div>}</div>
+      {data?.map((verse) => (
+        <Link to={`verse/${verse?.id}`} key={verse?.id}>
+          <li className='border-2 p-2 rounded-sm'>{verse?.id}</li>
+        </Link>
       ))}
     </ul>
   )

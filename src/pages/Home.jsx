@@ -8,12 +8,12 @@ import HomeSection from "../components/HomeSection"
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-5 pb-10 h-full overflow-auto">
-      <div className="flex justify-between items-center">
-        <div className="flex items-center gap-5">
+    <div className="flex flex-col gap-5 h-full overflow-auto">
+      <div className="flex justify-left items-center">
+        <div className="flex items-center gap-5 bg-gray-100 px-3 py-1 rounded-sm">
           <NavLink
             to="/"
-            className={({ isActive }) => isActive ? "text-[18px] pb-1 border-b-2 border-sky-600 " : ""
+            className={({ isActive }) => isActive ? "text-[18px] pb-0.5 border-b-2 border-sky-400 text-sky-400 del " : ""
             }
           >
             Today
@@ -21,52 +21,26 @@ const Home = () => {
 
           <NavLink
             to="bible"
-            className={({ isActive }) => isActive ? "text-[18px] pb-1 border-b-2 border-sky-600 " : ""
+            className={({ isActive }) => isActive ? "text-[18px] pb-0.5 border-b-2 border-sky-400 " : ""
             }
           >
             Bible
           </NavLink>
         </div>
-        <div className="flex gap-5">
-          <FaAward size={20} />
-          <FaBell size={20} />
-        </div>
-
       </div>
       <div className="flex gap-3 items-center text-gray-400 -mb-3">
-
-        <div className="flex items-center gap-1">
-          <span><FaSun color="white" /></span>
-          <h1>{new Date().toLocaleTimeString()? "Good Morning" : "Good Evening"}</h1>
-        </div>
       </div>
-      <div className="w-full h-[350px] rounded-lg bg-gray-800 hero-section overflow-hidden">
-        <div className="w-full h-full bg-black/50 flex flex-col justify-between gap-4 p-5">
-          <div className="flex justify-between  pb-1">
-            <div className="flex flex-col ">
-              <div className="flex gap-1 font-bold">
-              <span>Matthew</span> <span>4:16</span></div>
-              <p className="text-sm text-gray-400">Verse of the day</p>
-              </div>
-            <span className="font-semibold text-sm">NKJV</span>
-          </div>
-          <div className="font-bold text-[20px]">
-            The people who sat in darkness have seen a great light, and upon those who sat in the region and shadow of death, light has dawned.
-
-          </div>
-          <div className="flex justify-between items-center h-[50px]">
-            <SlLike size={26} className="hover:text-blue-500 cursor-pointer" />
-            <BiMessageRounded size={26} className="hover:text-blue-500 cursor-pointer" />
-            <MdOutlineShare size={26} className="hover:text-blue-500 cursor-pointer" />
-            <IoIosMore size={26} className="hover:text-blue-500 cursor-pointer" />
+      <div className="w-full h-[350px] flex gap-5 rounded-lg overflow-hidden">
+        <div className="w-[300px] h-[200px] bg-blue-400 rounded-md">
+          <div className="flex items-center p-5 gap-1">
+            <span><FaSun color="" size={30} /></span>
+            <h1 className="text-gray-900 text-lg font-bold">Good Morning</h1>
           </div>
         </div>
+        <div className="w-[300px] h-[200px] bg-orange-400  rounded-md"></div>
       </div>
       <HomeSection />
       <HomeSection />
-      <HomeSection />
-      <HomeSection />
-
     </div>
   )
 }

@@ -59,9 +59,8 @@ const Bible = () => {
         {
           data.map((chapter) => (
             <Link to={`/chapter/${chapter?.id}`} key={chapter?.id}>
-              <li className="flex gap-20 pl-2 py-1 border-b ">
-              <h1 className="w-30 md:w-50 text-[14px]">{chapter?.name}</h1>
-              <small className="text-[10px] text-gray-500">{`${chapter?.nameLong.substring(0, 25)}...`}</small>
+              <li className="flex gap-20 pl-2 py-1 border-b border-gray-400 ">
+                <h1 className="w-30 md:w-50 text-[14px]">{chapter?.name}</h1>
             </li>
             </Link>
           ))

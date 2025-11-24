@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 const Menu = () => {
   return (
     <div className="w-full flex relative px-2">
-      <div className="bg-gray-800 py-2 px-2 w-full rounded-lg shadow-md shadow-black/30">
+      <div className="bg-gray-700 py-2 px-2 w-full rounded-lg shadow-md shadow-black/30">
         <ul className="flex justify-between items-center">
           <li className="hover:bg-white group rounded-md transition">
             <NavLink to="/"

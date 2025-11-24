@@ -32,17 +32,17 @@ const Bible = () => {
   return (
     <div className="flex flex-col gap-5 h-full overflow-auto">
       <div className="flex justify-start items-center w-max">
-        <div className="flex items-center gap-5 bg-gray-100 px-3 py-1 rounded-sm">
+        <div className="flex items-center gap-5 py-1 rounded-sm">
           <NavLink
             to="/"
-            className={({ isActive }) => isActive ? "text-[18px] pb-0.5 border-b-2 border-sky-400 " : ""
+            className={({ isActive }) => isActive ? "pb-0.5 border-b-2 border-blue-800 " : ""
             }
           >
             Today
           </NavLink>
           <NavLink
             to="/bible"
-            className={({ isActive }) => isActive ? "text-[18px] pb-0.5 border-b-2 border-orange-400 text-orange-400 " : ""
+            className={({ isActive }) => isActive ? "pb-0.5 border-b-2 border-orange-800 text-orange-800 " : ""
             }
           >
             Bible

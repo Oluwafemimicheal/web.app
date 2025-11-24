@@ -15,7 +15,7 @@ function App() {
   return (
     <div className=" w-full lg:w-[600px] h-auto mx-auto overflow-auto">
       <div className="h-full relative">
-        <div className="p-3 pb-30">
+        <div className="p-1 pb-30">
           <Routes>
             <Route index path="/" element={<Home />} />
             <Route path="radio" element={<Radio />} />

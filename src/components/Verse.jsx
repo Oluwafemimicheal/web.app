@@ -34,7 +34,7 @@ const Verse = () => {
     <ul className='flex flex-wrap gap-3'>
       <div className={loading ? 'w-full h-[500px] flex justify-center items-center' : null}>{loading && <div><Spinner /></div>}</div>
       {data?.map((verse) => (
-        <Link to={`verse/${verse?.id}`} key={verse?.id}>
+        <Link to={`/section/${verse?.id}`} key={verse?.id}>
           <li className='border-2 p-2 rounded-sm'>{verse?.id}</li>
         </Link>
       ))}

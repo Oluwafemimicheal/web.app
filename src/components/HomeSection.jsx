@@ -1,8 +1,8 @@
 import { FaClock } from "react-icons/fa"
 const HomeSection = ({ title, desc, podcastImage }) => {
   return (
-    <div className="flex justify-between gap-4 w-full h-auto p-3 rounded-lg bg-gray-200 border-2 border-gray-300">
-      <div className="w-fit">
+    <div className="grid grid-cols-3 gap-4 w-full h-auto p-3 rounded-lg bg-gray-200 border-2 border-gray-300">
+      <div className="col-span-2">
         <h1 className="font-semibold ">{title}</h1>
         <p className="text-sm">{desc}</p>
         <div className="flex gap-2 items-center mt-5">

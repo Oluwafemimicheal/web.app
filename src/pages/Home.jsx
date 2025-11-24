@@ -37,30 +37,56 @@ const Home = () => {
               <h1 className="text-gray-900  font-bold">Good Morning</h1>
             </div>
           </div>
-          <div className="w-[300px] h-[150px] bg-orange-400  rounded-md"></div>
+          <div className="w-[300px] h-[150px] p-5 bg-orange-400  rounded-md">
+            <h1 className="font-semibold md:text-2xl">The Big Picture of God</h1>
+          </div>
 
         </div>
         <div className="flex flex-col gap-3">
-          <div className="w-full h-[200px] bg-blue-400 rounded-md">
-            <div className="flex items-center p-5 gap-1">
-              <span><FaSun color="" size={20} /></span>
-              <h1 className="text-gray-900  font-bold">Good Morning</h1>
+          <div className="w-full h-auto bg-blue-400 rounded-md">
+            <div className="flex flex-col p-5 gap-1">
+              <h1 className="text-gray-900 mb-3 font-bold">Bible Daily Word</h1>
+              <p>The LORD is my strength and my shield; my heart trusts in Him, and I am helped. <br></br> <span className="text-gray-800 font-semibold">This verse connects God's strength with protection and the resulting joy and thankfulness of the believer</span></p>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex gap-3">
-        <div className="w-full h-[100px] p-2 bg-blue-400 rounded-md overflow-hidden">
-          <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
+      <div className="flex flex-col gap-3 pt-4">
+        <h1 className="font-semibold text-gray-700">Bible Podcast</h1>
+        <div className="flex gap-3">
+          <div className="w-[150px] h-[100px] p-2 bg-blue-400 rounded-md overflow-hidden overflow-x-auto ">
+            <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
+          </div>
+          <div className="w-[150px] h-[100px] p-2 bg-amber-500 rounded-md overflow-hidden overflow-x-auto">
+            <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
+          </div>
+          <div className="w-[150px] h-[100px] p-2 bg-amber-500 rounded-md overflow-hidden overflow-x-auto">
+            <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
+          </div>
+          <div className="w-[150px] h-[100px] p-2 bg-blue-400 rounded-md overflow-hidden overflow-x-auto">
+            <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
+          </div>
+
         </div>
-        <div className="w-full h-[100px] p-2 bg-amber-500 rounded-md overflow-hidden">
-          <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
-        </div>
-        <div className="w-full h-[100px] p-2 bg-amber-500 rounded-md overflow-hidden">
-          <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
-        </div>
-        <div className="w-full h-[100px] p-2 bg-blue-400 rounded-md overflow-hidden">
-          <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
+
+
+      </div>
+      <div className="flex flex-col gap-3 pt-4">
+        <h1 className="font-semibold text-gray-700">Bible Teachings & Sermon</h1>
+        <div className="flex gap-3">
+          <div className="w-[150px] h-[100px] p-2 bg-blue-400 rounded-md overflow-hidden overflow-x-auto ">
+            <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
+          </div>
+          <div className="w-[150px] h-[100px] p-2 bg-amber-500 rounded-md overflow-hidden overflow-x-auto">
+            <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
+          </div>
+          <div className="w-[150px] h-[100px] p-2 bg-amber-500 rounded-md overflow-hidden overflow-x-auto">
+            <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
+          </div>
+          <div className="w-[150px] h-[100px] p-2 bg-blue-400 rounded-md overflow-hidden overflow-x-auto">
+            <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
+          </div>
+
         </div>
 
 

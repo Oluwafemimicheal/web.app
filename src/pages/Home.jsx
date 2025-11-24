@@ -52,7 +52,7 @@ const Home = () => {
       <div>
         <div className="flex flex-col gap-3 pt-4">
           <h1 className="font-semibold text-gray-700">Bible Podcast</h1>
-          <div className="grid grid-cols-4 gap-3 overflow-x-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             <div className="w-full h-[100px] p-2 bg-blue-200 rounded-md overflow-hidden  ">
               <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
             </div>
@@ -72,7 +72,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col gap-3 py-4">
           <h1 className="font-semibold text-gray-700">Bible Teachings & Sermon</h1>
-          <div className="grid grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             <div className="w-full h-[100px] p-2 bg-blue-200 rounded-md overflow-hidden ">
               <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
             </div>

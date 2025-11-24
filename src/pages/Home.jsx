@@ -28,13 +28,13 @@ const Home = () => {
         </div>
         <div className="w-full h-auto flex flex-col gap-3 rounded-lg overflow-hidden">
           <div className="flex gap-3">
-            <div className="w-[300px] h-[150px] bg-blue-200 rounded-md">
+            <div className="w-[300px] h-[100px] bg-blue-200 rounded-md">
               <div className="flex items-center p-5 gap-1">
                 <span><FaSun color="" size={16} /></span>
                 <h1 className="text-gray-900 text-[14px]  font-bold">Good Morning</h1>
               </div>
             </div>
-            <div className="w-[300px] h-[150px] flex items-center p-5 bg-orange-200  rounded-md">
+            <div className="w-[300px] h-[100px] flex items-center p-5 bg-orange-200  rounded-md">
               <h1 className="font-semibold md:text-2xl">The Big <br />Picture of God</h1>
             </div>
 
@@ -52,17 +52,17 @@ const Home = () => {
       <div>
         <div className="flex flex-col gap-3 pt-4">
           <h1 className="font-semibold text-gray-700">Bible Podcast</h1>
-          <div className="flex gap-3 overflow-x-auto">
-            <div className="w-[200px] h-[100px] p-2 bg-blue-200 rounded-md overflow-hidden  ">
+          <div className="grid grid-cols-4 gap-3 overflow-x-auto">
+            <div className="w-full h-[100px] p-2 bg-blue-200 rounded-md overflow-hidden  ">
               <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
             </div>
-            <div className="w-[150px] h-[100px] p-2 bg-amber-200 rounded-md overflow-hidden">
+            <div className="w-full h-[100px] p-2 bg-amber-200 rounded-md overflow-hidden">
               <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
             </div>
-            <div className="w-[150px] h-[100px] p-2 bg-amber-200 rounded-md overflow-hidden">
+            <div className="w-full h-[100px] p-2 bg-amber-200 rounded-md overflow-hidden">
               <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
             </div>
-            <div className="w-[150px] h-[100px] p-2 bg-blue-200 rounded-md overflow-hidden">
+            <div className="w-full h-[100px] p-2 bg-blue-200 rounded-md overflow-hidden">
               <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
             </div>
 
@@ -72,17 +72,17 @@ const Home = () => {
         </div>
         <div className="flex flex-col gap-3 py-4">
           <h1 className="font-semibold text-gray-700">Bible Teachings & Sermon</h1>
-          <div className="flex gap-3">
-            <div className="w-[150px] h-[100px] p-2 bg-blue-200 rounded-md overflow-hidden overflow-x-auto ">
+          <div className="grid grid-cols-4 gap-3">
+            <div className="w-full h-[100px] p-2 bg-blue-200 rounded-md overflow-hidden overflow-x-auto ">
               <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
             </div>
-            <div className="w-[150px] h-[100px] p-2 bg-amber-200 rounded-md overflow-hidden overflow-x-auto">
+            <div className="w-full h-[100px] p-2 bg-amber-200 rounded-md overflow-hidden overflow-x-auto">
               <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
             </div>
-            <div className="w-[150px] h-[100px] p-2 bg-blue-200 rounded-md overflow-hidden overflow-x-auto">
+            <div className="w-full h-[100px] p-2 bg-blue-200 rounded-md overflow-hidden overflow-x-auto">
               <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
             </div>
-            <div className="w-[200px] h-[100px] p-2 bg-amber-200 rounded-md overflow-hidden overflow-x-auto">
+            <div className="w-full h-[100px] p-2 bg-amber-200 rounded-md overflow-hidden overflow-x-auto">
               <p>the <br /> <span className="font-semibold">Bible Teaching</span><br /> podcast</p>
             </div>
 

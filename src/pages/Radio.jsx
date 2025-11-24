@@ -13,17 +13,17 @@ const Radio = () => {
         <small>Live Sermon</small>
       </div>
       <div>
-        <h3 className="font-bold text-2xl">The Morning Radio Show with Pst Abraham Arigi</h3>
+        <h3 className="font-bold text-2xl text-gray-800">The Morning Radio Show with Pst Abraham Arigi</h3>
       </div>
-      <div className="flex justify-between gap-4 w-full h-[100px] p-3 rounded-lg bg-gray-800 shadow-md shadow-black/30">
+      <div className="flex justify-between gap-4 w-full h-[100px] p-3 rounded-lg bg-blue-200">
       </div>
       <div>
-        <small className="text-gray-400 font-bold">Message Play List</small>
+        <small className="text-gray-800 font-bold">Message Play List</small>
         <ul className="mt-3 flex flex-col gap-3">
-          <Song />
-          <Song />
-          <Song />
-          <Song />
+          <Song topic={'Taking Root'} />
+          <Song topic={'The Kingdom Steward'} />
+          <Song topic={'The Divine Knowledge of God'} />
+          <Song topic={ } />
           <Song />
           <Song />
 

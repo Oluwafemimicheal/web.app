@@ -10,6 +10,26 @@ html{
   animation: bgChange 30s infinite;
 }
 
+
+.bible-text p {
+  line-height: 1.6;
+  font-size: 1.05rem;
+  color: #353535;
+  margin-bottom: 10px;
+}
+
+
+.bible-text span.v {    /* verse number */
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: rgb(44, 26, 109);
+}
+
+
+.bible-text .pilcrow {
+  display: none;
+}
+
 @keyframes bgChange {
   0%{
     background: url('/assets/images/maksim-samuilionak-gKV28_BORS0-unsplash.jpg') no-repeat center/cover;

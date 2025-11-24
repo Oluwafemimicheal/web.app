@@ -19,7 +19,7 @@ const Section = () => {
           }
         })
 
-        setData(response.data.data)
+        setData(response.data.data.content.replace(/¶/g, ""))
         setLoading(false)
       } catch (error) {
         console.log(error)
@@ -30,11 +30,12 @@ const Section = () => {
 
   }, [])
 
+
   return (
     <div>
       {loading && "Loading verse..."}
-      <div>
-        <div className="bible-text" dangerouslySetInnerHTML={{ __html: data.content }}></div>
+      <div className="px-2">
+        <div className="bible-text" dangerouslySetInnerHTML={{ __html: data }}></div>
       </div>
     </div>
   )

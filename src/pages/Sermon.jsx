@@ -117,7 +117,7 @@ const Sermon = () => {
       </div>
       <div>
         <small className="text-gray-800 font-bold pb-5">Message Play List</small>
-        <div className="mt-5">
+        <ul className="mt-5">
           {songsList.map((song) => (
             <li key={song.id} className="mb-2">
               <button
@@ -129,7 +129,7 @@ const Sermon = () => {
               </button>
             </li>
           ))}
-        </div>
+        </ul>
 
       </div>
 

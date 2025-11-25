@@ -1,34 +1,22 @@
-import { NavLink } from "react-router-dom"
-import { FaAccessibleIcon, FaBell, FaPlay } from "react-icons/fa"
-import Song from "../components/Song";
+import { LuRadioTower } from "react-icons/lu";
 
 const Radio = () => {
   return (
-    <div className="flex flex-col gap-5 px-2 py-2 h-full">
-      <div className="flex justify-start items-center gap-1">
+    <div className="h-[500px] w-full flex flex-col justify-center items-center">
+
+      <div className="relative">
+        <LuRadioTower size={60} color={"gray"} className="animate-ping" />
+        <LuRadioTower size={60} color={"gray"} className="absolute top-0 left-0" />
+      </div>
+      <div className="flex justify-start items-center gap-1 mt-5">
         <div className="w-2.5 h-2.5 bg-green-600 rounded-full ">
           <div className="w-2.5 h-2.5 bg-green-600 rounded-full animate-ping">
           </div>
         </div>
-        <small>Live Sermon</small>
+        <small>Live Radio</small>
       </div>
-      <div>
-        <h3 className="font-bold text-2xl text-gray-800">The Morning Radio Show with Pst Abraham Arigi</h3>
-      </div>
-      <div className="flex justify-between gap-4 w-full h-[100px] p-3 rounded-lg bg-blue-200">
-      </div>
-      <div>
-        <small className="text-gray-800 font-bold">Message Play List</small>
-        <ul className="mt-3 flex flex-col gap-3">
-          <Song topic={'Taking Root'} />
-          <Song topic={'The Kingdom Steward'} />
-          <Song topic={'The Divine Knowledge of God'} />
-          <Song topic={'The Divine'} />
-        </ul>
-      </div>
-
     </div>
   )
 }
 
-export default Radio;
+export default Radio

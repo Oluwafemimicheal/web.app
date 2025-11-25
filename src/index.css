@@ -1,4 +1,16 @@
 @import "tailwindcss";
+@import "./theme/variable.css";
+
+:root {
+  --color-primary: #2563eb; /* blue-600 */
+  --color-bg: #ffffff;
+  --color-text: #111827;
+}
+
+.dark {
+  --color-bg: #0f172a;     /* slate-900 */
+  --color-text: #ffffff;
+}
 
 html{
   scroll-behavior: smooth;

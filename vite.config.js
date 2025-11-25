@@ -4,13 +4,4 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  server: {
-    proxy: {
-      // "/api": {
-      //   target: "https://rest.api.bible",
-      //   changeOrigin: true,
-      //   secure: false,
-      // }
-    }
-  }
 })  

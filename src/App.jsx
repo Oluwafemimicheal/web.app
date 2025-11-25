@@ -9,11 +9,13 @@ import Radio from "./pages/Radio";
 import Bible from "./pages/Bible";
 import Verse from "./components/Verse";
 import Section from "./components/Section";
+import { useState } from "react";
 
 function App() {
+  const [dark, setDark] = useState(false);
 
   return (
-    <div className=" w-full lg:w-[600px] h-auto mx-auto overflow-auto">
+    <div className={dark ? "dark" : ""}>
       <div className="h-full relative">
         <div className="p-1 pb-30">
           <Routes>

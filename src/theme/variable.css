@@ -1,0 +1,11 @@
+:root {
+  --color-bg: #4aebeb;
+  --color-text: #1f1f1f;
+  --color-primary: #2563eb; /* blue-600 */
+}
+
+.dark-theme {
+  --color-bg: #0f172a;     /* slate-900 */
+  --color-text: #e2e8f0;   /* slate-200 */
+  --color-primary: #3b82f6; /* blue-500 */
+}
